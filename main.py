@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import *
 
-
 # Okno glowne
 window = tk.Tk()
 window.title("Traffic Intensity Calculation Methods Visualization")
@@ -10,12 +9,8 @@ window.resizable(False, False)
 window.configure(bg="#606166")
 
 # Wybieranie metody liczenia
-
-
-
-#Kontener
 button_frame = tk.Frame(window, width=720, height=720)
-button_frame.configure(bg="#606166", highlightbackground="red", highlightthickness="1")
+button_frame.configure(bg="#606166", highlightbackground="black", highlightthickness="1")
 button_frame.pack(pady = 50, padx=30)
 
 input_label_methods = tk.Label(button_frame, text="Pick the calculation method")
@@ -29,9 +24,6 @@ method2_button = tk.Radiobutton(button_frame, text="Metoda 2", variable=v, value
 method2_button.grid(row=1, column=1, padx=20, pady=5)
 method3_button = tk.Radiobutton(button_frame, text="Metoda 3", variable=v, value=3)
 method3_button.grid(row=1, column=2, padx=20, pady=5)
-
-#Wybieranie zakresu danych
-
 
 
 # Wybieranie metody uploadowania danych
